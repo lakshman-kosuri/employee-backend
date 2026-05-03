@@ -1,0 +1,4 @@
+cat > .htaccess << 'EOF'
+Options -Indexes
+DirectoryIndex index.php
+EOF
