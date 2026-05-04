@@ -1,4 +1,5 @@
-cat > .htaccess << 'EOF'
 Options -Indexes
 DirectoryIndex index.php
-EOF
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.php [QSA,L]
